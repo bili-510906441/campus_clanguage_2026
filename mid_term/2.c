@@ -69,21 +69,22 @@ int main(){
     scanf("%d %d %d", &car, &p_index, &day);
     int car_end = car%10;
     int t = car;
-    while (t>0, t){
+    while (t){
         count += 1;
+        t /= 10;
     }
     if (day>7||day<1||p_index<0||p_index>600||car<0||count>6){
         printf("input error");
     }
     else if (day == 6||day == 7||p_index < 200){
-            printf("No");
+            printf("Yes");
         }
         else if (p_index<400)
         {
-            printf(solve_200_to_400(car_end, day));
+            printf("%s", solve_200_to_400(car_end, day));
         }
         else {
-            printf(solve_more_400(car_end, day));
+            printf("%s", solve_more_400(car_end, day));
         }
     
 }
