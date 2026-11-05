@@ -53,3 +53,9 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# VSCode files
+.vscode/
+
+# compiled .exe files
+*.exe
