@@ -1,1 +1,1 @@
-# xdu_clanguage_2026
+# campus_clanguage_2026
